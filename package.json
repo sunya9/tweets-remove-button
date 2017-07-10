@@ -1,0 +1,27 @@
+{
+  "name": "tweets-remove-button",
+  "version": "1.0.0",
+  "description": "Remove tweets from Amazon dash button.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scan": "dash-button scan",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunya9/tweets-remove-button.git"
+  },
+  "author": "sunya <mugen.xyz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunya9/tweets-remove-button/issues"
+  },
+  "homepage": "https://github.com/sunya9/tweets-remove-button#readme",
+  "dependencies": {
+    "dash-button": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "progress": "^2.0.0",
+    "twitter": "^1.7.1"
+  }
+}
