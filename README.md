@@ -35,7 +35,7 @@ PROTECT_RETWEET=true
 PROTECT_REPLY=
 ```
 
-### Run
+## Run
 Require sudo.
 ```
 sudo npm start
