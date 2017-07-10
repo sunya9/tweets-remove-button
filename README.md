@@ -40,3 +40,9 @@ Require sudo.
 ```
 sudo npm start
 ```
+
+## Docker version
+
+```
+docker run --env-file=.env --restart=always --net=host -d sunya/trb
+```
