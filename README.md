@@ -3,7 +3,11 @@ Remove tweets from Amazon dash button.
 
 ## Setup
 
-### Install libpcap
+Using Docker, you replace `sudo` with `docker exec`
+
+### Preare
+
+If you use with Docker, unnecessary it.
 ```
 # Ubuntu and Debian
 sudo apt-get install libpcap-dev
@@ -13,9 +17,12 @@ sudo yum install libpcap-devel
 
 ### Get MAC Address of Your amazon dash button
 
-Require sudo.
 ```
+# manual
 sudo npm run scan
+
+# Docker
+docker run --rm --net=host sunya/tweets-remove-button npm run scan
 ```
 
 ### Write .env
@@ -36,13 +43,11 @@ PROTECT_REPLY=
 ```
 
 ## Run
-Require sudo.
+
 ```
+# manual
 sudo npm start
-```
 
-## Docker version
-
-```
-docker run --env-file=.env --restart=always --net=host -d sunya/trb
+# Docker
+docker run --env-file=.env --restart=always --net=host -d sunya/tweets-remove-button
 ```
